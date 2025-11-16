@@ -18,54 +18,65 @@ body{
   border: 2px solid rgb(0, 0, 0);
   margin: 5px;
   border-radius: 30px;
-  padding: 5px;
+  padding: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  height: 100vh;        /* FULL HEIGHT */
+  width: 100%;          /* FULL WIDTH OF LEFT COLUMN */
 }
 
+/* Profile Wrapper */
 .profile{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-}
-.username{
-  display: flex;
+  flex-direction: column;   /* forces text under image */
   align-items: center;
-  justify-content: center;
+  text-align: center;
 }
+
+/* Profile Photo */
 .profilephoto{
   object-fit: cover;
   object-position: center;
-  height: 70px;
-  width: 70px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
-  margin-left: 30px;
+  margin: 0 auto 10px auto;   /* centers + adds spacing */
 }
-.messagepng{
-  height: auto;
-  width: 20px;
-  margin-right: 2px;
+
+/* Text under image */
+.profile p, .profile h3 {
+  margin-top: 6px;
 }
-button{
-  justify-content: left;
+
+/* Buttons */
+.button-leftnavbar{
+  width: 90%;      /* full width buttons */
+  justify-content: flex-start;
   align-items: center;
   display: flex;
   font-size: 15px;
-  margin: 10px;
-  padding: 6px;
+  margin: 10px 0;
+  padding: 10px;
   background-color: white;
   border: none;
   text-align: left;
   border-radius: 10px;
   font-weight: 500;
-
 }
 button:hover{
   background-color: black;
   color: white;
-  padding: 10px;
-  font-weight: 500;
   transition: 0.3s;
+  cursor: pointer;
 }
+.messagepng{
+  height: 20px;
+  margin-right: 10px;
+}
+
 
 /* FEED SECTION */
 .feed {
@@ -85,13 +96,17 @@ button:hover{
 
 .tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 7px;
 }
-
-.tab {
-  cursor: pointer;
+.button-rightsidebar{
+  border: none;
+  background-color: white;
+  padding: 6px;
+  font-size: 15px;
+  margin-right: 2px;
+  border-radius: 10px;
 }
-
 
 
 /* POSTS */
@@ -135,14 +150,7 @@ button:hover{
   align-items: center;
 }
 
-.woow {
-  background: #ff3b30;
-  color: white;
-  padding: 6px 14px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
+
 
 /* SHARE BOX */
 .share-box {
@@ -167,11 +175,86 @@ button:hover{
 }
 
 .share-box button {
-    align-self: flex-end;
-    padding: 8px 16px;
-    background: #2a4fff;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
+  align-self: flex-end;
+  padding: 8px 16px;
+  background: #ff0000;
+  border: none;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
+.share-box button:hover {
+  color: rgb(255, 255, 255);
+  background: #000000;
+
+  font-weight: 500;
+  transition: 0.3s;
+}
+.Send{
+  width: 100px;
+  justify-content: center;
+}
+/* RIGHT SIDEBAR */
+.rightbar {
+  border: 2px solid black;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  margin: 5px;
+  height: 100vh;        /* FULL HEIGHT */
+  width: 100%;          /* FULL WIDTH OF LEFT COLUMN */
+  box-sizing: con-box;
+}
+
+.stories {
+
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.story img{
+    width: 70px;
+    height: 100px;
+    background: #ddd;
+    border-radius: 10px;
+}
+
+.suggestion {
+    display: flex;
+    object-fit: cover;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.suggestion img {
+    border-radius: 50%;
+    height: 50px;
+}
+
+.suggestion button {
+    background: #2a4fff;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+.recommend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.pill {
+    background: #ececec;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.pill.pink { background: #ffd0ef; }
+.pill.purple { background: #e3d7ff; }
