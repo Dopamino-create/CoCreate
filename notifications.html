@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Social — Notifications</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="left">
+      <div class="card">
+        <div class="profile-compact">
+          <img src="images/profilephoto1.jpeg" alt="">
+          <div class="meta"><div class="name">Alexis</div></div>
+        </div>
+        <nav class="nav-list" aria-label="Main navigation">
+          <a class="nav-item" href="index.html">🏠 Home</a>
+          <a class="nav-item" href="explore.html">🔎 Explore</a>
+          <a class="nav-item" href="create.html">✏️ Create Post</a>
+          <a class="nav-item active" href="notifications.html">🔔 Notifications</a>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="header-row">
+        <h1>Notifications</h1>
+        <div class="meta-muted">All activity</div>
+      </div>
+
+      <section class="card" style="display:flex;flex-direction:column;gap:10px">
+        <div class="notification">
+          <img src="images/profilephoto2.jpg" style="width:48px;height:48px;border-radius:999px">
+          <div>
+            <div style="font-weight:700">Roshni ji liked your post</div>
+            <div class="meta-muted">2 hours ago</div>
+          </div>
+        </div>
+
+        <div class="notification">
+          <img src="images/suggestion1.png" style="width:48px;height:48px;border-radius:999px">
+          <div>
+            <div style="font-weight:700">Nicki started following you</div>
+            <div class="meta-muted">Yesterday</div>
+          </div>
+        </div>
+
+        <div class="notification">
+          <img src="images/profilehphoto3.jpg" style="width:48px;height:48px;border-radius:999px">
+          <div>
+            <div style="font-weight:700">Ajay commented on your post</div>
+            <div class="meta-muted">3 days ago</div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <aside class="right">
+      <div class="card">
+        <div class="kicker">Notification settings</div>
+        <p style="color:var(--muted);margin-top:8px">This page is static — in a real app you would adjust push and email preferences here.</p>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

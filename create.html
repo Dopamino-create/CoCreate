@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Social — Create Post</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="left">
+      <div class="card">
+        <div class="profile-compact">
+          <img src="images/profilephoto1.jpeg" alt="user">
+          <div class="meta">
+            <div class="name">Alexis</div>
+          </div>
+        </div>
+        <nav class="nav-list" aria-label="Main navigation">
+          <a class="nav-item" href="index.html">🏠 Home</a>
+          <a class="nav-item" href="explore.html">🔎 Explore</a>
+          <a class="nav-item active" href="create.html">✏️ Create Post</a>
+          <a class="nav-item" href="notifications.html">🔔 Notifications</a>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="header-row">
+        <h1>Create post</h1>
+        <div class="meta-muted">Front-end only — static preview</div>
+      </div>
+
+      <section class="card">
+        <form class="share-box" onsubmit="return false;">
+          <img class="share-avatar" src="images/profilephoto1.jpeg" alt="">
+          <div class="share-input">
+            <textarea placeholder="What's happening?"></textarea>
+            <div class="share-actions">
+              <button class="btn secondary">Add image</button>
+              <button class="btn secondary">Add location</button>
+              <div style="flex:1"></div>
+              <button class="btn">Publish</button>
+            </div>
+          </div>
+        </form>
+
+        <div style="margin-top:16px">
+          <h3>Preview</h3>
+          <div class="post card">
+            <div class="post-header">
+              <img class="avatar" src="images/profilephoto1.jpeg" alt="">
+              <div class="post-meta">
+                <h4>Alexis</h4>
+                <small>Now</small>
+              </div>
+            </div>
+            <p>This is a preview of your post. Images and comments will appear here once posted (demo only).</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="right">
+      <div class="card">
+        <div class="kicker">Tips</div>
+        <ul style="margin-top:10px;color:var(--muted);">
+          <li>Use short paragraphs for readability.</li>
+          <li>Add an image to increase engagement.</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

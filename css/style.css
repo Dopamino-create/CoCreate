@@ -1,59 +1,61 @@
 /* -------------------------------------------
-   Global Reset & Theme
+   Global Theme
 -------------------------------------------- */
 * {
   margin: 0px;
-  padding: 0px;
   box-sizing: border-box;
-  font-family: n
+  font-family:Georgia, 'Times New Roman', Times, serif
 }
 body{
+  padding: 10px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-
   height: 1fr;
+  background: linear-gradient(72deg, rgba(141, 34, 195, 0.67) 0%, #d568fa6b 100%);
+  
 }
+
+
 /* LEFT NAVBAR */
 .left-Navbar{
   border: 2px solid rgb(0, 0, 0);
-  margin: 5px;
   border-radius: 30px;
   padding: 20px;
-  
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  height: 100vh;        /* FULL HEIGHT */
-  width: 100%;          /* FULL WIDTH OF LEFT COLUMN */
+  height: 100vh;        
+  width: 100%;   
+         
 }
 
-/* Profile Wrapper */
+
+
 .profile{
   display: flex;
-  flex-direction: column;   /* forces text under image */
+  flex-direction: column;  
   align-items: center;
   text-align: center;
 }
 
-/* Profile Photo */
+
 .profilephoto{
   object-fit: cover;
   object-position: center;
   height: 90px;
   width: 90px;
   border-radius: 50%;
-  margin: 0 auto 10px auto;   /* centers + adds spacing */
+  margin: 0 auto 10px auto;   
 }
 
-/* Text under image */
+
 .profile p, .profile h3 {
   margin-top: 6px;
 }
 
-/* Buttons */
+
 .button-leftnavbar{
-  width: 90%;      /* full width buttons */
+  width: 90%;      
   justify-content: flex-start;
   align-items: center;
   display: flex;
@@ -68,8 +70,9 @@ body{
 }
 button:hover{
   background-color: black;
+  padding: 20px;
   color: white;
-  transition: 0.3s;
+  transition: 0.4s;
   cursor: pointer;
 }
 .messagepng{
@@ -80,11 +83,15 @@ button:hover{
 
 /* FEED SECTION */
 .feed {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin: 10px;
-  background: white;
+  background: none;
   border-radius: 16px;
   padding: 5px;
   border: 2px solid black;
+  gap: 15px;
 }
 
 .feed-header {
@@ -114,10 +121,10 @@ button:hover{
   background: #f7f7f7;
   border-radius: 16px;
   padding: 18px;
-
 }
 
-.post.one { background: #e8f0ff; }
+.post.one { background: rgba(255,255,255,0.5); }
+
 .post.two { background: #fff9d9; }
 
 .post-header {
@@ -165,7 +172,7 @@ button:hover{
 .share-box input {
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 .share-actions {
@@ -194,10 +201,100 @@ button:hover{
   width: 100px;
   justify-content: center;
 }
+/* --- SHARE BOX STYLING --- */
+.share-box {
+    background: var(--bg-card);
+    padding: 20px;
+    border-radius: 20px;
+
+    margin-bottom: 30px;
+}
+
+/* Main Post Input */
+.share-box .write-post {
+    width: 100%;
+    padding: 15px;
+    border-radius: var(--radius-s);
+    border: 1px solid #eee;
+    background: #f9f9f9;
+    margin-bottom: 15px;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.share-box .write-post:focus {
+    background: #fff;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.1); /* Glow effect */
+}
+
+/* Container for the buttons */
+.share-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.action-btn:hover {
+    background-color: #f0f2f5;
+    color: var(--accent);
+    border-color: #dfe6e9;
+}
+
+/* Specific style for the Location text input to make it blend in */
+.location-input {
+    border: none;
+
+    padding: 8px;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+
+    width: 140px;
+    transition: 0.3s;
+}
+
+.location-input:focus {
+    border-bottom: 1px solid var(--accent);
+    color: var(--accent);
+}
+
+/* Send Button */
+.Send {
+    width: 100%;
+    padding: 12px;
+    background: var(--text-main);
+    color: rgb(255, 0, 0);
+    border: none;
+    border-radius: var(--radius-s);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Send:hover {
+    background: var(--accent);
+    transform: translateY(-2px); /* Slight lift */
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+}
 /* RIGHT SIDEBAR */
 .rightbar {
   border: 2px solid black;
-  background: white;
+  background: none;
   padding: 20px;
   border-radius: 16px;
   margin: 5px;

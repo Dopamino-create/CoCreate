@@ -81,7 +81,7 @@
           <div class="post-header">
               <img src="images/profilehphoto3.jpg" class="avatar">
               <div>
-                  <h4>Maruti Sharma</h4>
+                  <h4>Ajay Sharma</h4>
                   <span>3 hours ago</span>
               </div>
           </div>
@@ -100,12 +100,23 @@
 
       <!-- SHARE BOX -->
       <div class="share-box">
-          <input type="text" placeholder="Share something">
+          <input type="text" class="write-post" placeholder="Share something...">
+          
           <div class="share-actions">
-              <span>📎 File</span>
-              <span>🖼 Image</span>
-              <span>📍 Location</span>
+              
+              <input type="file" id="upload-file" hidden>
+              <label for="upload-file" class="action-btn">
+                  📎 File
+              </label>
+
+              <input type="file" id="upload-image" accept="image/*" hidden>
+              <label for="upload-image" class="action-btn">
+                  🖼 Image
+              </label>
+
+              <input type="text" class="location-input" placeholder="📍 Add Location">
           </div>
+          
           <button class="Send">Send</button>
       </div>
       <!-- RIGHT SIDEBAR -->
