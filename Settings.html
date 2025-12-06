@@ -6,12 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CoCreate | Settings</title>
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
   <!-- LEFT NAVBAR -->
-<div class="left-Navbar">
+  <div class="left-Navbar">
     <div class="profile">
+      <div class="brand">
+        <div class="brand-logo">✦</div>
+        <span>CoCreate</span>
+      </div>
       <img class="profilephoto" src="images/profilephoto1.jpeg" alt="DP">
       <div class="username">
         <div class="name">
@@ -31,25 +36,26 @@
       <img class="messagepng" src="images/messageanimated.gif" alt=".."> Messages
     </a>
 
-    <a style="text-decoration: none;" href="Forums.html" class="button-leftnavbar"> 
+    <a style="text-decoration: none;" href="Forums.html" class="button-leftnavbar">
       Forums
     </a>
 
-    <a style="text-decoration: none;" href="Friends.html" class="button-leftnavbar"> 
-      Friends 
+    <a style="text-decoration: none;" href="Friends.html" class="button-leftnavbar">
+      Friends
     </a>
 
-    <a style="text-decoration: none;" href="Media.html" class="button-leftnavbar"> 
+    <a style="text-decoration: none;" href="Media.html" class="button-leftnavbar">
       Media
     </a>
 
-    <a style="text-decoration: none;" href="Settings.html" class="button-leftnavbar" style="background-color: #590080; color: white;">
-       Settings
+    <a style="text-decoration: none;" href="Settings.html" class="button-leftnavbar"
+      style="background-color: #590080; color: white;">
+      Settings
     </a>
-    
+
   </div>
 
-   <!-- SETTINGS SECTION -->
+  <!-- SETTINGS SECTION -->
 
   <div class="feed settings-container">
 
@@ -62,22 +68,22 @@
 
       <div class="input-group">
         <label>Display Name</label>
-        <input type="text" placeholder="Alexis">
+        <input type="text" placeholder="Sneha">
       </div>
 
       <div class="input-group">
         <label>Username</label>
-        <input type="text" placeholder="@Alexis123">
+        <input type="text" placeholder="@Sneha123">
       </div>
 
       <div class="input-group">
         <label>Email Address</label>
-        <input type="email" placeholder="alexis@example.com">
+        <input type="email" placeholder="Sneha@example.com">
       </div>
 
       <div class="input-group">
         <label>Bio</label>
-        <textarea placeholder="of mountains and coffee. 🏔️☕️>"></textarea>
+        <textarea placeholder="love mountains and coffee. 🏔️☕️>"></textarea>
       </div>
     </div>
 
@@ -119,6 +125,14 @@
           <span class="slider round"></span>
         </label>
       </div>
+      <div class="toggle-row">
+        <span>Dark Mode</span>
+        <label class="switch">
+          <input type="checkbox" id="darkModeToggle">
+          <span class="slider round"></span>
+        </label>
+      </div>
+
     </div>
 
     <div class="settings-actions">
@@ -128,44 +142,44 @@
 
   </div>
 
-      <!-- RIGHT SIDEBAR -->
-   <div class="rightbar">
+  <!-- RIGHT SIDEBAR -->
+  <div class="rightbar">
 
-        <h2>Stories</h2>
-        <div class="stories">
-            <div class="story">
-              <img src="images/rightside1.avif" alt="error">
-            </div>
-            <div class="story">
-              <img src="images/rightside2.avif" alt="error">
-            </div>
-        </div>
-
-        <h3>Suggestions</h3>
-
-        <div class="suggestion">
-            <img src="images/suggestion1.png">
-            <span>Kukun di</span>
-            <button>Follow</button>
-        </div>
-
-        <div class="suggestion">
-            <img src="images/suggestion 3.png">
-            <span>Tarak mehta</span>
-            <button>Follow</button>
-        </div>
-
-        <h3>Recommendations</h3>
-
-        <div class="recommend">
-            <div class="pill">UI/UX</div>
-            <div class="pill pink">Music</div>
-            <div class="pill">Cooking</div>
-            <div class="pill purple">Hiking</div>
-        </div>
-
+    <h2>Stories</h2>
+    <div class="stories">
+      <div class="story">
+        <img src="images/rightside1.avif" alt="error">
+      </div>
+      <div class="story">
+        <img src="images/rightside2.avif" alt="error">
+      </div>
     </div>
 
+    <h3>Suggestions</h3>
+
+    <div class="suggestion">
+      <img src="images/suggestion1.png">
+      <span>Kukun di</span>
+      <button class="Follow">Follow</button>
+    </div>
+
+    <div class="suggestion">
+      <img src="images/suggestion 3.png">
+      <span>Tarak mehta</span>
+      <button class="Follow">Follow</button>
+    </div>
+
+    <h3>Recommendations</h3>
+
+    <div class="recommend">
+      <div class="pill">UI/UX</div>
+      <div class="pill pink">Music</div>
+      <div class="pill">Cooking</div>
+      <div class="pill purple">Hiking</div>
+    </div>
+
+  </div>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

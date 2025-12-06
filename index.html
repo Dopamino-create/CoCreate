@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CoCreate | Home</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <!-- Left-Navbar -->
   <div class="left-Navbar">
     <div class="profile">
+      <div class="brand">
+        <div class="brand-logo">✦ </div>
+        <span>CoCreate</span>
+      </div>
       <img class="profilephoto" src="images/profilephoto1.jpeg" alt="DP">
       <div class="username">
         <div class="name">
           <p>Sneha</p>
         </div>
-        <div >
+        <div>
           <p>@Sneha123</p>
         </div>
       </div>
     </div>
 
-    <a style="text-decoration: none;"  href="index.html" class="button-leftnavbar"> 
+    <a style="text-decoration: none;" href="index.html" class="button-leftnavbar">
       My Feed
     </a>
 
-    <a  style="text-decoration: none;" href="Messages.html" class="button-leftnavbar"> 
+    <a style="text-decoration: none;" href="#" class="button-leftnavbar">
       <img class="messagepng" src="images/messageanimated.gif" alt="..">
       Messages
     </a>
 
-    <a  style="text-decoration: none;" href="Forums.html" class="button-leftnavbar"> 
+    <a style="text-decoration: none;" href="#" class="button-leftnavbar">
       Forums
     </a>
 
-    <a style="text-decoration: none;" href="Friends.html" class="button-leftnavbar"> 
-      Friends 
+    <a style="text-decoration: none;" href="Friends.html" class="button-leftnavbar">
+      Friends
     </a>
 
-    <a  style="text-decoration: none;" href="Media.html" class="button-leftnavbar"> 
+    <a style="text-decoration: none;" href="#" class="button-leftnavbar">
       Media
     </a>
 
-    <a  style="text-decoration: none;" href="Settings.html" class="button-leftnavbar"> 
-      Settings 
+    <a style="text-decoration: none;" href="Settings.html" class="button-leftnavbar">
+      Settings
     </a>
 
   </div>
@@ -52,126 +58,129 @@
 
   <div class="feed">
 
-      <div class="feed-header">
-          <h2>Feeds</h2>
-          <div class="tabs">
-              <button class="button-rightsidebar">Recents</button>
-              <button class="button-rightsidebar">Friends</button>
-              <button class="button-rightsidebar">Popular</button>
-          </div>
-      </div>
-
-      <!-- POST 1 -->
-      <div class="post one">
-
-          <div class="post-header">
-              <img src="images/profilephoto2.jpg" class="avatar">
-              <div>
-                  <h4>Sarita ji</h4>
-                  <span>2 hours ago</span>
-              </div>
-          </div>
-
-          <p style="font-weight: 400;">
-              Hi everyone, today saw 2 of the most beautiful mountain in the world 😍,
-              I also want to say hi to Sneha !
-          </p>
-
-          <div class="post-images">
-              <img src="images/mountain.jpeg">
-              <img src="images/mountain2.webp">
-              <img src="images/profilephoto1.jpeg">
-          </div>
-
-          <div class="post-actions">
-              <span>❤️ Like</span>
-              <span>💬 Comment</span>
-          </div>
-
-      </div>
-
-      <!-- POST 2 -->
-      <div class="post two">
-
-          <div class="post-header">
-              <img src="images/profilehphoto3.jpg" class="avatar">
-              <div>
-                  <h4>Deepak ji</h4>
-                  <span>3 hours ago</span>
-              </div>
-          </div>
-
-          <p>
-              I chose a wonderful coffee today! They have a latte with coconut milk… delicious!
-              It's really incredibly tasty!!! 😋
-          </p>
-
-          <div class="post-actions">
-              <span>❤️ Like</span>
-              <span>💬 Comment</span>
-          </div>
-
-      </div>
-
-      <!-- SHARE BOX -->
-      <div class="share-box">
-          <input type="text" class="write-post" placeholder="Share something...">
-          
-          <div class="share-actions">
-              
-              <input type="file" id="upload-file" hidden>
-              <label for="upload-file" class="action-btn">
-                  📎 File
-              </label>
-
-              <input type="file" id="upload-image" accept="image/*" hidden>
-              <label for="upload-image" class="action-btn">
-                  🖼 Image
-              </label>
-
-              <input type="text" class="location-input" placeholder="📍 Add Location">
-          </div>
-          
-          <button class="Send">Send</button>
+    <div class="feed-header">
+      <h2>Feeds</h2>
+      <div class="tabs">
+        <button class="button-rightsidebar">Recents</button>
+        <a href="friends.html"><button class="button-rightsidebar">Friends</button></a>
+        <button class="button-rightsidebar">Popular</button>
       </div>
     </div>
 
-    <!-- RIGHT SIDEBAR -->
-   <div class="rightbar">
+    <!-- POST 1 -->
+    <div class="post one">
 
-        <h2>Stories</h2>
-        <div class="stories">
-            <div class="story">
-              <img src="images/rightside1.avif" alt="error">
-            </div>
-            <div class="story">
-              <img src="images/rightside2.avif" alt="error">
-            </div>
+      <div class="post-header">
+        <img src="images/profilephoto2.jpg" class="avatar">
+        <div>
+          <h4>Sarita ji</h4>
+          <span>2 hours ago</span>
         </div>
+      </div>
 
-        <h3>Suggestions</h3>
+      <p style="font-weight: 400;">
+        Hi everyone, today saw 2 of the most beautiful mountain in the world 😍,
+        I also want to say hi to Sneha !
+      </p>
 
-        <div class="suggestion">
-            <img src="images/suggestion1.png">
-            <span>Kukun di</span>
-            <button>Follow</button>
-        </div>
+      <div class="post-images">
+        <img src="images/mountain.jpeg">
+        <img src="images/mountain2.webp">
+        <img src="images/profilephoto1.jpeg">
+      </div>
 
-        <div class="suggestion">
-            <img src="images/suggestion 3.png">
-            <span>Tarak Mehta</span>
-            <button>Follow</button>
-        </div>
-
-        <h3>Recommendations</h3>
-
-        <div class="recommend">
-            <div class="pill">UI/UX</div>
-            <div class="pill pink">Music</div>
-            <div class="pill">Cooking</div>
-            <div class="pill purple">Hiking</div>
-        </div>
+      <div class="post-actions">
+        <span>❤️ Like</span>
+        <span>💬 Comment</span>
+      </div>
 
     </div>
+
+    <!-- POST 2 -->
+
+    <div class="post two">
+
+      <div class="post-header">
+        <img src="images/profilehphoto3.jpg" class="avatar">
+        <div>
+          <h4>Deepak ji</h4>
+          <span>3 hours ago</span>
+        </div>
+      </div>
+
+      <p>
+        I chose a wonderful coffee today! They have a latte with coconut milk… delicious!
+        It's really incredibly tasty!!! 😋
+      </p>
+
+      <div class="post-actions">
+        <span>❤️ Like</span>
+        <span>💬 Comment</span>
+      </div>
+
+    </div>
+
+    <!-- SHARE BOX -->
+    <div class="share-box">
+      <input type="text" class="write-post" placeholder="Share something...">
+
+      <div class="share-actions">
+
+        <input type="file" id="upload-file" hidden>
+        <label for="upload-file" class="action-btn">
+          📎 File
+        </label>
+
+        <input type="file" id="upload-image" accept="image/*" hidden>
+        <label for="upload-image" class="action-btn">
+          🖼 Image
+        </label>
+
+        <input type="text" class="location-input" placeholder="📍 Add Location">
+      </div>
+
+      <button class="Send">Send</button>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDEBAR -->
+  <div class="rightbar">
+
+    <h2>Stories</h2>
+    <div class="stories">
+      <div class="story">
+        <img src="images/rightside1.avif" alt="error">
+      </div>
+      <div class="story">
+        <img src="images/rightside2.avif" alt="error">
+      </div>
+    </div>
+
+    <h3>Suggestions</h3>
+
+    <div class="suggestion">
+      <img src="images/suggestion1.png">
+      <span>Kukun di</span>
+      <button class="Follow">Follow</button>
+    </div>
+
+    <div class="suggestion">
+      <img src="images/suggestion 3.png">
+      <span>Tarak Mehta</span>
+      <button class="Follow">Follow</button>
+    </div>
+
+    <h3>Recommendations</h3>
+
+    <div class="recommend">
+      <div class="pill">UI/UX</div>
+      <div class="pill pink">Music</div>
+      <div class="pill">Cooking</div>
+      <div class="pill purple">Hiking</div>
+    </div>
+
+  </div>
+  <script src="js/index.js"></script>
+</body>
 
 </html>

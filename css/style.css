@@ -4,9 +4,10 @@
 * {
   margin: 0px;
   box-sizing: border-box;
-  font-family:Georgia, 'Times New Roman', Times, serif
+  font-family: Georgia, 'Times New Roman', Times, serif
 }
-body{
+
+body {
   padding: 10px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -18,49 +19,68 @@ body{
 /* LEFT NAVBAR */
 
 .left-Navbar {
-                                                    /* Glass Effect */
-  background: rgba(255, 255, 255, 0.15); 
-  backdrop-filter: blur(12px);            
-  border: 1px solid rgba(255, 255, 255, 0.4); 
+  /* Glass Effect */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 30px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;        
-  width: 100%;   
+  height: 100vh;
+  width: 100%;
 }
 
-
-
-.profile{
+.brand {
   display: flex;
-  flex-direction: column;  
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 30px
+}
+
+.brand-logo {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  place-items: center;
+  transition: 0.5s;
+}
+.brand-logo:hover{
+  color: white;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
 
-.profilephoto{
+.profilephoto {
   object-fit: cover;
   object-position: center;
   height: 90px;
   width: 90px;
   border-radius: 50%;
-  margin: 0 auto 10px auto;   
+  margin: 0 auto 10px auto;
 }
 
 
-.profile p, .profile h3 {
+.profile p,
+.profile h3 {
   margin-top: 6px;
 }
 
 
 .button-leftnavbar {
-  background-color: rgba(255, 255, 255, 0.3); 
-  color: #3e0050; 
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #3e0050;
   transition: 0.5s;
-  width: 90%;      
+  width: 100%;
   justify-content: flex-start;
   align-items: center;
   display: flex;
@@ -75,13 +95,14 @@ body{
 
 
 .button-leftnavbar:hover {
-  background-color: #590080; 
+  background-color: #590080;
   color: white;
-  padding: 15px; 
+  padding: 15px;
 
   cursor: pointer;
 }
-.messagepng{
+
+.messagepng {
   height: 20px;
   margin-right: 10px;
 }
@@ -112,13 +133,14 @@ body{
   flex-wrap: wrap;
   gap: 7px;
 }
+
 .button-rightsidebar {
   background-color: rgba(255, 255, 255, 0.3);
-  color: #3e0050; 
+  color: #3e0050;
   border: none;
   border-radius: 10px;
   font-size: 15px;
-  padding: 8px 15px; 
+  padding: 8px 15px;
   margin-right: 5px;
   font-weight: 500;
   transition: 0.5s;
@@ -128,7 +150,7 @@ body{
 .button-rightsidebar:hover {
   background-color: #590080;
   color: white;
-  padding: 15px 25px; 
+  padding: 15px 25px;
   cursor: pointer;
 }
 
@@ -137,13 +159,18 @@ body{
 
 .post {
 
-  background: rgba(255, 255, 255, 0.85); 
+  background: rgba(255, 255, 255, 0.85);
   border-radius: 16px;
   padding: 18px;
 }
 
-.post.one { background: rgba(255, 255, 255, 0.85); }
-.post.two { background: rgba(255, 255, 255, 0.85); }
+.post.one {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.post.two {
+  background: rgba(255, 255, 255, 0.85);
+}
 
 .post-header {
   display: flex;
@@ -151,12 +178,14 @@ body{
   align-items: center;
   margin-bottom: 10px;
 }
-.avatar{
+
+.avatar {
   width: 70px;
   object-fit: cover;
   height: 70px;
   border-radius: 35px;
 }
+
 .post-images {
   margin: 12px 0;
   display: grid;
@@ -188,15 +217,15 @@ body{
 }
 
 .share-box input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 12px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
 }
 
 .share-actions {
-    display: flex;
-    gap: 15px;
-    font-size: 14px;
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
 }
 
 .share-box button {
@@ -208,6 +237,7 @@ body{
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
+
 .share-box button:hover {
   color: rgb(255, 255, 255);
   background: #000000;
@@ -215,10 +245,11 @@ body{
   font-weight: 500;
   transition: 0.3s;
 }
+
 .Send {
 
   background-color: rgba(255, 255, 255, 0.3);
-  color: #3e0050; 
+  color: #3e0050;
   width: 100px;
   padding: 10px;
   border: none;
@@ -230,7 +261,7 @@ body{
 .Send:hover {
   background-color: #590080;
   color: white;
-  padding: 15px; 
+  padding: 15px;
   cursor: pointer;
   box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
 }
@@ -240,88 +271,89 @@ body{
 
 
 .share-box {
-    background: var(--bg-card);
-    padding: 20px;
-    border-radius: 20px;
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: 20px;
 
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 /* Main Post Input */
+
 .share-box .write-post {
-    width: 100%;
-    padding: 15px;
-    border-radius: var(--radius-s);
-    border: 1px solid #eee;
-    background: #f9f9f9;
-    margin-bottom: 15px;
-    outline: none;
-    transition: 0.5s;
+  width: 100%;
+  padding: 15px;
+  border-radius: var(--radius-s);
+  border: 1px solid #eee;
+  background: #f9f9f9;
+  margin-bottom: 15px;
+  outline: none;
+  transition: 0.5s;
 }
 
 .share-box .write-post:focus {
-    background: #ffffff;
-    border-color: var(--accent);
-    box-shadow: 0 0 0 4px rgba(34, 5, 251, 0.1); 
+  background: #ffffff;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(34, 5, 251, 0.1);
 }
 
 
 .share-actions {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 15px;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
 }
 
 .action-btn {
-    cursor: pointer;
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    padding: 8px 12px;
-    border-radius: 8px;
-    transition: all 0.2s ease;
-    background: transparent;
-    border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  background: transparent;
+  border: 1px solid transparent;
 }
 
 .action-btn:hover {
-    background-color: #f0f2f5;
-    color: var(--accent);
-    border-color: #dfe6e9;
+  background-color: #f0f2f5;
+  color: var(--accent);
+  border-color: #dfe6e9;
 }
 
 
 .location-input {
-    border: none;
-    padding: 8px;
-    outline: none;
-    font-family: 'Inter', sans-serif;
-    width: 140px;
-    transition: 0.3s;
+  border: none;
+  padding: 8px;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+  width: 140px;
+  transition: 0.3s;
 }
 
 .location-input:focus {
-    border-bottom: 1px solid var(--accent);
-    color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+  color: var(--accent);
 }
 
 /* Send Button */
 .Send {
-    width: 100%;
-    padding: 12px;
-    background: var(--text-main);
-    color: rgb(255, 0, 0);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .Send:hover {
-    transform: translateY(-2px); 
-    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
-    border-radius: 15px;
+  width: 100%;
+  padding: 12px;
+  background: var(--text-main);
+  color: rgb(255, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Send:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+  border-radius: 15px;
 }
 
 /* RIGHT SIDEBAR */
@@ -343,30 +375,30 @@ body{
 
 .stories {
 
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-.story img{
-    width: 70px;
-    height: 100px;
-    background: #ddd;
-    border-radius: 10px;
+.story img {
+  width: 70px;
+  height: 100px;
+  background: #ddd;
+  border-radius: 10px;
 }
 
 .suggestion {
-    display: flex;
-    object-fit: cover;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 0;
+  display: flex;
+  object-fit: cover;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
 }
 
 .suggestion img {
-    border-radius: 50%;
-    height: 50px;
+  border-radius: 50%;
+  height: 50px;
 }
 
 .suggestion button {
@@ -383,40 +415,43 @@ body{
 .suggestion button:hover {
   background-color: #590080;
   color: white;
-  padding: 10px 18px; 
+  padding: 10px 18px;
   cursor: pointer;
 }
 
 .recommend {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .pill {
-    background: #ececec;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 14px;
-    transition: 0.5s;
+  background: #ececec;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: 0.5s;
 }
 
-.pill.pink { background: #ffd0ef; }
-.pill.purple { background: #e3d7ff; }
+.pill.pink {
+  background: #ffd0ef;
+}
 
-.pill:hover{
+.pill.purple {
+  background: #e3d7ff;
+}
+
+.pill:hover {
   padding: 10px;
   cursor: pointer;
 }
 
-/* -------------------------------------------
-   SETTINGS PAGE STYLES
--------------------------------------------- */
 
+/* SETTINGS PAGE STYLES */
 
 .settings-container {
-  overflow-y: auto; 
+  overflow-y: auto;
 }
 
 .settings-card {
@@ -428,7 +463,7 @@ body{
 
 .settings-card h3 {
   color: #3e0050;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 10px;
   margin-bottom: 5px;
 }
@@ -446,7 +481,7 @@ body{
   color: #555;
 }
 
-.input-group input, 
+.input-group input,
 .input-group textarea {
   padding: 12px;
   border-radius: 10px;
@@ -457,7 +492,7 @@ body{
   transition: 0.3s;
 }
 
-.input-group input:focus, 
+.input-group input:focus,
 .input-group textarea:focus {
   border-color: #8d22c3;
   background: white;
@@ -479,7 +514,7 @@ body{
   height: 26px;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -488,7 +523,10 @@ body{
 .slider {
   position: absolute;
   cursor: pointer;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: #ccc;
   transition: .4s;
   border-radius: 34px;
@@ -507,11 +545,11 @@ body{
 }
 
 
-input:checked + .slider {
-  background-color: #8d22c3; 
+input:checked+.slider {
+  background-color: #8d22c3;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   transform: translateX(24px);
 }
 
@@ -551,41 +589,147 @@ input:checked + .slider:before {
 }
 
 .cancel-btn:hover {
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* -------------------------------------------
+   FRIENDS PAGE STYLES
+-------------------------------------------- */
+
+/* Grid Container for Cards */
+.friends-grid {
+  display: grid;
+  /* Auto-fit creates responsive columns */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  gap: 15px;
+  width: 100%;
+}
+
+/* Individual Friend Card */
+.friend-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.friend-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Friend Avatar (Circle) */
+.friend-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px;
+}
+
+/* Text Info */
+.friend-info h4 {
+  margin: 0;
+  color: #3e0050;
+}
+
+.friend-info span {
+  color: #666;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.mutuals {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 15px;
 }
 
 
-/* =========================================
-   RESPONSIVE MEDIA QUERIES 
-========================================= */
+.friend-actions {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+}
 
-/* Tablet View (Max width 1024px) */
+
+.msg-btn {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: #8d22c3;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.msg-btn:hover {
+  background-color: #3e0050;
+}
+
+/* Remove/Delete Button Style */
+.del-btn {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ff4757;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #ff4757;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.del-btn:hover {
+  background-color: #ff4757;
+  color: white;
+}
+
+/* Responsive Adjust for Friends Page */
+@media screen and (max-width: 768px) {
+  .friends-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+  }
+}
+
+
+/* RESPONSIVE MEDIA QUERIES  */
+
+
+
 @media screen and (max-width: 1024px) {
   body {
-    grid-template-columns: 200px 1fr; 
+    grid-template-columns: 200px 1fr;
   }
 
   .rightbar {
-    display: none; 
+    display: none;
   }
 }
 
-/* Mobile View */
+
 @media screen and (max-width: 768px) {
   body {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     padding: 5px;
   }
 
 
   .left-Navbar {
     height: auto;
-    flex-direction: row; 
+    flex-direction: row;
     position: relative;
     top: 0;
     padding: 10px;
-    overflow-x: auto; 
+    overflow-x: auto;
     justify-content: flex-start;
     gap: 15px;
     border-radius: 15px;
@@ -594,7 +738,7 @@ input:checked + .slider:before {
   .profile {
     flex-direction: row;
     margin-bottom: 0;
-    min-width: max-content; 
+    min-width: max-content;
   }
 
   .profilephoto {
@@ -602,14 +746,14 @@ input:checked + .slider:before {
     width: 40px;
     margin: 0 10px 0 0;
   }
-  
+
   .username {
-      text-align: left;
+    text-align: left;
   }
 
   .button-leftnavbar {
-    width: auto; 
-    white-space: nowrap; 
+    width: auto;
+    white-space: nowrap;
     padding: 8px 15px;
     margin: 0;
     font-size: 14px;
@@ -626,11 +770,11 @@ input:checked + .slider:before {
   }
 
   .post-images {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
-  
+
   .post-images img {
-      height: auto; 
-      max-height: 300px;
+    height: auto;
+    max-height: 300px;
   }
 }
